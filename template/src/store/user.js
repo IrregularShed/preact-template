@@ -2,7 +2,7 @@ const startState = {
   user: { terminalId: '', valid: false }
 };
 
-export default store => {
+export default function user(store) {
   store.on('@init', () => startState);
   store.on('clearAll', () => startState);
 
@@ -11,4 +11,4 @@ export default store => {
     terminalId = terminalId.trim();
     return { user: { ...user, terminalId, valid: terminalId !== '' } };
   });
-};
+}
