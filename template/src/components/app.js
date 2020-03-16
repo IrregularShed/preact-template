@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 import Helmet from 'preact-helmet';
-import StoreContext from 'storeon/preact/context';
+import { StoreContext } from 'storeon/preact';
 
 import Header from './header';
 
