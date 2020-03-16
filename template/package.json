@@ -15,11 +15,37 @@
   },
   "eslintConfig": {
     "extends": "preact",
+    "rules": {
+      "no-unused-vars": "warn",
+      "react/sort-comp": "off",
+      "lines-around-comment": "off",
+      "react/prefer-stateless-function": "off",
+      "react/jsx-indent-props": [
+        "error",
+        2
+      ],
+      "indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "brace-style": [
+        "warn",
+        "1tbs"
+      ],
+      "arrow-body-style": [
+        "warn",
+        "as-needed"
+      ]
+    },
     "ignorePatterns": [
       "build/"
     ]
   },
   "devDependencies": {
+    "decko": "^1.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
@@ -27,15 +53,21 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
+    "node-sass": "^4.13.1",
     "per-env": "^1.0.2",
     "preact-cli": "^3.0.0-rc.6",
+    "preact-material-components": "^1.6.1",
     "preact-render-spy": "^1.2.1",
+    "sass-loader": "^7.3.1",
     "sirv-cli": "^0.4.5"
   },
   "dependencies": {
+    "@storeon/localstorage": "^0.13.1",
     "preact": "^10.3.2",
+    "preact-helmet": "^4.0.0-alpha-3",
     "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
+    "preact-router": "^3.2.1",
+    "storeon": "^2.0.1"
   },
   "jest": {
     "preset": "jest-preset-preact",
