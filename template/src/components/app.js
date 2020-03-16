@@ -4,6 +4,7 @@ import Helmet from 'preact-helmet';
 import { StoreContext } from 'storeon/preact';
 
 import Header from './header';
+import store from '../store';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
